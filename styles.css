@@ -1,0 +1,312 @@
+/*body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    position: fixed;
+    background-color: black; 
+    overflow: auto;
+}
+
+.work {
+    position: fixed;
+    top: 20px;
+    right: 560px;
+    cursor: pointer;
+    z-index: 3;
+    font-size: 20px;
+}
+#work-text {
+    font-weight: bold;
+    font-family: Helvetica, sans-serif;
+    color: #ffffff; 
+    padding: 5px;
+    display: inline-block;
+    font-size: 20px; 
+
+#work-text:hover {
+    color: red; 
+}
+
+.additional-text {
+    display: none;
+    position: fixed;
+    top: calc(20px + 35px); 
+    right: 560px;
+    z-index: 4;
+}
+.text-item {
+    display: block;
+    opacity: 0;
+    margin: 5px 0;
+    font-weight: bold;
+    font-family: Helvetica, sans-serif;
+    color: #ffffff; 
+    text-decoration: none;
+}
+
+.text-item:hover {
+    color: red; 
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  
+    z-index: 2;
+}
+
+.work:focus .additional-text {
+    display: block;
+}
+
+.work:focus .additional-text .text-item:nth-child(1) {
+    animation: fadeIn 0.5s ease 0s forwards;
+}
+
+.work:focus .additional-text .text-item:nth-child(2) {
+    animation: fadeIn 0.5s ease 0.5s forwards;
+}
+
+.work:focus .additional-text .text-item:nth-child(3) {
+    animation: fadeIn 0.5s ease 1s forwards;
+}
+.work:focus .additional-text .text-item:nth-child(4) {
+    animation: fadeIn 0.5s ease 1.5s forwards;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.about {
+    position: fixed;
+    top: 20px; 
+    right: 20px; 
+    cursor: pointer;
+    z-index: 3;
+    font-size: 20px; 
+}
+
+#about-text {
+    font-weight: bold;
+    font-family: Helvetica, sans-serif;
+    color: #ffffff; 
+    padding: 5px;
+    display: inline-block;
+    font-size: 20px; 
+}
+
+#about-text:hover {
+    color: red; 
+}
+
+.additional-text-about {
+    display: none;
+    position: fixed;
+    top: calc(20px + 35px); 
+    right: 20px; 
+    z-index: 999;
+}
+
+
+.about:focus .additional-text-about {
+    display: block;
+}
+
+.about:focus .additional-text-about .text-item:nth-child(1) {
+    animation: fadeIn 0.1s ease 0.3s forwards;
+}
+
+.about:focus .additional-text-about .text-item:nth-child(2) {
+    animation: fadeIn 0.2s ease 0.3s forwards;
+}
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: right;
+    align-items: flex-end; 
+    width: 95vw;
+    height: 100vh;
+}
+
+
+.image-space {
+    flex-basis: 1000px; 
+    height: 1000%; 
+}
+
+.image-wrapper {
+    margin: 100px; 
+}
+
+
+.hover-image {
+    border-radius: 600px; 
+    box-shadow: 0 10 10 rgb(255, 255, 255); 
+    transition: box-shadow 0.3s ease, transform 0.3s ease; 
+}
+
+
+.hover-image:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 10px 15px rgb(255, 0, 0);
+}
+
+
+
+.text-container {
+    position: fixed;
+    top: 35%;
+    left: 30px;
+    transform: translateY(-60%);
+    
+}
+
+.text-container img{
+    position: fixed;
+    top: 50%;
+    left: 500px;
+    transform: translateY(-50%);
+}
+
+.image2{
+    position: absolute;
+    top: 110%;
+    left: 20px;
+    transform: translateY(-70%);
+}
+
+
+.glowing-text {
+    font-size: 96px;
+    font-weight: bold;
+    font-family: 'GraffitiCity.otf', sans-serif; 
+    color: #fff; 
+}
+
+
+.glow-letter:hover {
+    text-shadow: 0 0 10px red; 
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    
+}
+.container {
+    width: 100%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+*/
+
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    position: fixed;
+    background-color: black;
+    overflow: auto;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style for the glowing text */
+.glowing-text {
+    font-size: 48px;
+    font-weight: bold;
+    font-family: 'GraffitiCity.otf', sans-serif;
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Style for the glow effect on hover */
+.glow-letter:hover {
+    color: red;
+}
+
+/* Styles for the image container */
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Wrapper for each image */
+.image-wrapper {
+    margin: 10px;
+}
+
+/* Image with hover effect */
+.hover-image {
+    border-radius: 50%;
+    box-shadow: 0 5px 5px rgba(255, 0, 0, 0); /* Transparent shadow */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect */
+.hover-image:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(255, 0, 0, 0.5); /* Red shadow on hover */
+}
+
+/* Style for the "Contact Now" button */
+.contact-now-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    z-index: 9999;
+}
+
+.contact-now-button:hover {
+    background-color: #555;
+}
+
+/* Overlay */
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
